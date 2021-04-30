@@ -8,7 +8,9 @@ import org.springframework.web.client.RestTemplate;
 public class WeatherService {
 
     @Autowired
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
+
+
 
 
 }
