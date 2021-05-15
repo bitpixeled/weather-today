@@ -12,6 +12,7 @@ public class WeatherController {
     @Autowired
     private WeatherService weatherService;
 
+
     @GetMapping(value = "/")
     public ResponseEntity<String> getWeather (){
         return weatherService.getWeather();
