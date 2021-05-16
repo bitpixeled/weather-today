@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import java.time.Duration;
 
 @Configuration
-public class BeanConfig {
+public class AppConfig {
 
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder){
@@ -17,4 +17,6 @@ public class BeanConfig {
                 .setReadTimeout(Duration.ofMillis(3000))
                 .build();
     }
+
+
 }
